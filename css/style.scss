@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;900&display=swap');
+
+:root{
+    --primary-Pale-blue: hsl(225, 100%, 94%);
+    --primary-Bright-blue: hsl(245, 75%, 52%);
+    --neutral-Very-pale-blue: hsl(225, 100%, 98%);
+    --neutral-Desaturated-blue: hsl(224, 23%, 55%);
+    --neutral-peach-blue: rgb(116,107,241);
+    --neutral-Dark-blue: hsl(223, 47%, 23%);
+    --font-weight-x: 500;
+    --font-weight-x2:  700;
+    --font-weight-x3: 900;
+    --font-size-p: 1rem;
+    --line-height: 1.5;
+    --margin-bottom: 1.875rem;
+    --border-radius: 0.313rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: var(--primary-Pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: var(--font-weight-x);
+    line-height: var(--line-height);
+    
+}
+
+h1{
+    color: var(--neutral-Dark-blue);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: var(--font-weight-x3);
+    line-height: 1.2;
+    margin-bottom: var(--margin-bottom);
+}
+
+p{
+    margin-top: 0;
+    color: var(--neutral-Desaturated-blue);
+}
+
+a{
+    font-weight: var(--font-weight-x2);
+}
+
+.margin-b{
+    margin-bottom: var(--margin-bottom);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 6.25rem;
+}
+
+.btn{
+    display: inline-block;
+    line-height: var(--line-height);
+    color: var(--neutral-Very-pale-blue);
+    font-weight: var(--font-weight-x2);
+    background-color: var(--primary-Bright-blue);
+    border: 0.063rem solid transparent;
+    border-radius: var(--border-radius);
+    box-shadow: 0.625rem 0.563rem 1rem -0.375rem rgba(0,0,0,0.75);
+    border: 0;
+    padding: 0.625rem 1.875rem;
+    margin-bottom: var(--margin-bottom);
+    cursor: pointer;
+    width: 100%;
+}
+.btn:hover{
+    background-color: var(--neutral-peach-blue);
+}
+
+.card{
+    width: 28.125rem;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem 3.125rem;
+    background: var(--neutral-Very-pale-blue);
+    border-bottom-left-radius: 1.563rem;
+    border-bottom-right-radius: 1.563rem;
+}
+
+.card-heading{
+    background-image: url("../images/illustration-hero.svg"); 
+    background-repeat:  no-repeat;
+    background-size: 100% 100%;
+    border-top-left-radius: 1.563rem;
+    border-top-right-radius: 1.563rem;
+    height: 13.125rem;
+}
+
+.annual-plan-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    padding: 0.313rem 1.875rem;
+    background-color: var(--primary-Pale-blue);
+    margin-bottom: var(--margin-bottom);
+    border-radius: var(--border-radius);
+    width: 100%;
+}
+
+.annual-plan-title{
+    font-weight: var(--font-weight-x2);
+}
+
+.music-icon{
+    width: 3.125rem;
+    position: absolute;
+    left: 3%;
+}
+
+.d-block{
+    transform: translateX(40%);
+}
+
+.change-link:hover{
+    color: var(--neutral-peach-blue);
+    text-decoration: none;
+}
+
+.cancel-link{
+    text-decoration: none;
+    color: var(--neutral-Desaturated-blue);
+}
+.cancel-link:hover{
+    color: var(--neutral-Dark-blue);
+}
+
+@media screen and (max-width: 375px) {
+    
+    .card-body{
+        padding: 2.5rem 1.563rem;
+    }
+
+  }
